@@ -148,6 +148,9 @@ img{
     height: 100%;
 }
 
+.side_bar .menu{
+    height: 40%;
+}
 .side_bar .menu .logo{
     margin-bottom: 2rem;
     margin-left: 1.5rem;
@@ -184,6 +187,7 @@ img{
 
 .side_bar .user {
     padding: 1.5rem;
+    height: 15%;
 }
 
 .side_bar .user a{
@@ -212,19 +216,92 @@ img{
 
 .album{
     width: calc(100vw - 300px);
+    background-color: var(--spotify-lightdark);
 }
 
 .album .album_head{
-    text-align: end;
+    justify-content: end;
     height: 100px;
     z-index: 900;
     position: fixed;
-    background-color: transparent;
-    width: 90%;
+    background-color: var(--spotify-dark);
+    opacity: 0.5;
+    width: 80%;
+    align-items: center;
+
+}
+
+.album .album_head a{
+    padding: 0.7rem 2rem;
+    font-size: 15px;
+    color: var(--spotify-light);
+    border: 1px solid var(--spotify-light);
+    border-radius: 30px;
+    text-decoration: none;
+    
+}
+
+.album .album_body{
+    overflow: scroll;
+}
+.album .album_body .navbar{
+    margin-top: 120px;
 }
 
 
+.album .album_body .navbar ul{
+    justify-content: space-between;
+    list-style: none;
+}
 
+.album .album_body .navbar li> a{
+    text-decoration: none;
+    color: var(--spotify-prymary);
+}
+
+.album .album_body .navbar li> hr{
+    width: 40%;
+    color: #ADFF2F;
+    font-size: 3px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0.3rem;
+}
+
+.album .album_body .brani, .album .album_body .for_you{
+    padding: 1rem;
+}
+.album .album_body .container h2{
+    margin: 2rem 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--spotify-light);
+}
+
+.album .album_body .container .col_2{
+    padding: 1rem;
+    text-align: center;
+}
+
+.album .album_body .container h4{
+    color: var(--spotify-light);
+    margin: 1rem 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.album .album_body .brani .col_2 .subtitle{
+    color: var(--spotify-prymary);
+    font-size: 10px;
+}
+
+.album .album_body .brani .row{
+    margin-bottom: 1rem;
+}
+
+.album .album_body .for_you p{
+    color: var(--spotify-light);
+    font-size: 10px;
+}
 
 
 /* #endregion page_top */
