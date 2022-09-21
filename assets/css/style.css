@@ -138,7 +138,7 @@ img{
 .side_bar{
     width: 300px;
     height: 100%;
-    z-index: 1000;
+    z-index: 999;
     background-color: var(--spotify-dark);
 }
 
@@ -276,6 +276,8 @@ img{
     font-size: 30px;
     font-weight: bold;
     color: var(--spotify-light);
+    padding-left: 1rem;
+
 }
 
 .album .album_body .container .col_2{
@@ -288,6 +290,7 @@ img{
     margin: 1rem 0;
     font-size: 15px;
     font-weight: bold;
+    padding-left: 1rem;
 }
 .album .album_body .brani .col_2 .subtitle{
     color: var(--spotify-prymary);
@@ -301,6 +304,8 @@ img{
 .album .album_body .for_you p{
     color: var(--spotify-light);
     font-size: 10px;
+    padding-left: 1rem;
+
 }
 
 
@@ -311,7 +316,7 @@ img{
 
 .page_bottom{
     height: 100px;
-    
+    z-index: 1000;
 }
 
 
