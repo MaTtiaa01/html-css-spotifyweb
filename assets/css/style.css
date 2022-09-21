@@ -110,6 +110,13 @@
     height: 100%;
 }
 
+
+.debug .col_2{
+    height: 100px;
+    width: 300px;
+    border: 3px solid red;
+}
+
 /* #region page_top */
 
 .page_top{
