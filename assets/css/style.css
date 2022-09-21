@@ -14,6 +14,10 @@
 
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 img{
     max-width: 100%;
 }
@@ -89,6 +93,9 @@ img{
     width: calc((100% / 12) * 12);
 }
 
+.c_light{
+    color: var(--spotify-light);
+}
 /* debug */
 .debug .side_bar{
     border: 3px solid red;
@@ -140,11 +147,14 @@ img{
     justify-content: space-between;
     height: 100%;
 }
-.side_bar .menu{
-    padding-left: 1.5rem;
-}
+
 .side_bar .menu .logo{
     margin-bottom: 2rem;
+    margin-left: 1.5rem;
+}
+
+.side_bar .menu .open {
+    border-left: 4px solid var(--spotify-open);
 }
 
 .side_bar .menu a{
@@ -152,10 +162,13 @@ img{
     color: var(--spotify-prymary);
     display: block;
     margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    font-size: 15px;
 }
 
 .side_bar .menu a> img{
     color: var(--spotify-prymary);
+    
 }
 
 .side_bar .menu i{
@@ -163,6 +176,37 @@ img{
     margin-right: 0.5rem;
 }
 
+.side_bar .menu .new_playlist_title{
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.side_bar .user {
+    padding: 1.5rem;
+}
+
+.side_bar .user a{
+    color: var(--spotify-prymary);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.side_bar .user hr{
+    color: var(--spotify-prymary);
+    font-size: 2px;
+    margin: 1rem 0;
+}
+
+.side_bar .user .user_name img{
+    background-color: var(--spotify-prymary);
+    border-radius: 50%;
+}
+
+.side_bar .user .user_name span{
+    color: var(--spotify-light);
+    font-size: 15px;
+}
 
 /* start album */
 
@@ -178,6 +222,8 @@ img{
     background-color: transparent;
     width: 90%;
 }
+
+
 
 
 

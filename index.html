@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Spotify</title>
 </head>
@@ -16,25 +18,25 @@
                 <div class="menu">
                     
                     
-                    <img class="logo" src="./assets/spotify/img/logo.svg" alt="" width="150px">
+                    <img class="logo" src="./assets/spotify/img/logo.svg" alt="" width="150">
 
                     
-                    <a href="#">
-                        <img src="./assets/spotify/img/home.svg" alt="" width="20px">
+                    <a class="open" href="#">
+                        <img src="./assets/spotify/img/home.svg" alt="" width="20">
                         <span>Home</span>
                     </a>
 
                     <a href="#">
-                        <img src="./assets/spotify/img/search.svg" alt="" width="20px">
+                        <img src="./assets/spotify/img/search.svg" alt="" width="20">
                         <span>Cerca</span>
                     </a>
 
                     <a href="#">
-                        <img src="./assets/spotify/img/libreria.svg" alt="" width="20px">
+                        <img src="./assets/spotify/img/libreria.svg" alt="" width="20">
                         <span>La tua libreria</span>
                     </a>
 
-                    <div>Playlist</div>
+                    <div class="c_light new_playlist_title">PLAYLIST</div>
 
                     <div class=" crea_playlist">
 
@@ -53,7 +55,20 @@
                    
                 </div>
                 <!-- /.menu -->
-                <div class="user"></div>
+                <div class="user">
+                    <div class="install_app">
+                        <a href="#">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span>Installa app</span>
+                            
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="user_name">
+                        <img src="./assets/spotify/img/profile.svg" alt="" width="30">
+                        <span>John Doe</span>
+                    </div>
+                </div>
                 <!-- /.ueser -->
             </div>
             <!-- /.box -->
