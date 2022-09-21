@@ -20,6 +20,11 @@
     width: 100%;
     
 }
+
+.container_50{
+    width: 50%;
+    margin: auto;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -112,21 +117,34 @@
     display: flex;
 }
 
+/* start side_bar */
 .side_bar{
     width: 100px;
     height: 100%;
-    
+    z-index: 1000;
 }
 
-.album{
-    width: calc(100vw - 100px);
-   
-}
 
 .side_bar .box{
     justify-content: space-between;
     height: 100%;
 }
+
+/* start album */
+
+.album{
+    width: calc(100vw - 100px);
+}
+
+.album .album_head{
+    text-align: end;
+    height: 100px;
+    z-index: 900;
+    position: fixed;
+    background-color: transparent;
+    width: 90%;
+}
+
 
 
 /* #endregion page_top */
