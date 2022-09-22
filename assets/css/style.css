@@ -251,14 +251,14 @@ img{
 .album .album_head{
     justify-content: end;
     height: 80px;
-    background-color: var(--spotify-dark);
+    background-color: rgba(0, 0, 0, 0.4);
     opacity: 0.7;
     width: 100%;
     align-items: center;
 
 }
     
-    
+
 
 .album .album_head a{
     padding: 0.5rem 2rem;
@@ -344,6 +344,15 @@ img{
 
 }
 
+/* start hover */
+
+.album .album_head a:hover{
+    font-size: 20px;
+}
+
+.side_bar a:hover, .album_body .navbar ul a:hover{
+    color: var(--spotify-light);
+}
 
 
 /* #endregion page_top */
@@ -458,6 +467,20 @@ img{
     background-color: var(--spotify-light);
     height: 4px;
     border-radius: 10px;
+}
+
+/* start hover */
+
+.page_bottom .control_left .brano_name:hover, .page_bottom .control_left i:hover{
+    color: var(--spotify-light);
+}
+
+#play:hover{
+    font-size: 30px;
+}
+
+.page_bottom .control_center .song_bar .bar:hover + .playing_bar {
+    background-color: var(--spotify-open);
 }
 
 
