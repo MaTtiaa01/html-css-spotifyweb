@@ -194,6 +194,7 @@ img{
     padding-left: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 .side_bar .crea_playlist{
     align-items: center;
@@ -230,6 +231,14 @@ img{
     color: var(--spotify-light);
     font-size: 15px;
     margin-left: 0.5rem;
+}
+
+.side_bar .mobile_menu{
+    display: none;
+}
+
+.side_bar .user_mobile{
+    display: none;
 }
 
 /* start album */
@@ -550,5 +559,58 @@ img{
     .side_bar .user img, .side_bar .user span{
         width: 15px;
     }
+    .side_bar .menu .new_playlist_title{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    .side_bar{
+        width: 40px;
+    }
+
+    .side_bar .mobile_menu, .side_bar .user_mobile{
+        display: block;
+    }
+
+    .side_bar .menu, .side_bar .user{
+        display: none;
+    }
+    
+    .album{
+        width: calc(100% - 40px);
+    }
+    .page_bottom .control_left .song{
+        margin: 0;
+        padding: 0;
+        padding-left: 0.5rem;
+        
+    }
+
+    .side_bar .mobile_menu, .side_bar .user_mobile{
+        padding: 0.3rem;
+        text-align: center;
+    }
+
+    .side_bar .mobile_menu img{
+        margin-bottom: 0.5rem;
+    }
+
+    .side_bar .user_mobile img{
+        background-color: var(--spotify-prymary);
+        border-radius: 50%;
+        margin-top: 1rem;
+    }
+
+    .side_bar .user_mobile i{
+        color: var(--spotify-prymary);
+    }
+
+
+
+
+
 
 }
+
