@@ -10,6 +10,8 @@
     --spotify-prymary: #6F6F6F;
     --spotify-open: #ADFF2F;
     --spotify-light: #FFFFFF;
+    --spotify-player: #282828;
+
 
 
 }
@@ -32,9 +34,10 @@ img{
     
 }
 
-.container_50{
-    width: 50%;
+.container_70{
+    width: 70%;
     margin: auto;
+    
 }
 .row{
     display: flex;
@@ -331,7 +334,7 @@ img{
 
 .page_bottom{
     height: 100px;
-    
+    background-color: var(--spotify-player);
 }
 
 .page_bottom .control_left, .page_bottom .control_right{
@@ -342,7 +345,36 @@ img{
 .page_bottom .control_center{
     flex-grow: 2;
 }
+.page_bottom .control_left{
+    padding: 1rem;
+    align-items: center;
+}
+.page_bottom .control_left .logo_song{
+    object-fit: contain;
+    width: 40px;
+}
 
+.page_bottom .control_left .song{
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.page_bottom .control_left .song .song_name{
+    color: var(--spotify-light);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.page_bottom .control_left .song .brano_name{
+    color: var(--spotify-prymary);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.page_bottom .control_left i{
+    margin: 0 0.5rem;
+    color: var(--spotify-prymary);
+}
 
 /* #endregion page_bottom */
 
@@ -403,3 +435,12 @@ img{
     }
 }
 
+
+@media screen and (max-width:1024px) {
+
+    .container_90{
+        width: 90%;
+        margin: auto;
+    }
+    
+}
