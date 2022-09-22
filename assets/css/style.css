@@ -195,10 +195,18 @@ img{
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
+.side_bar .crea_playlist{
+    align-items: center;
+}
+
 
 .side_bar .user {
     padding: 1.5rem;
     height: 15%;
+}
+
+.side_bar .user .user_name{
+    align-items: center;
 }
 
 .side_bar .user a{
@@ -218,9 +226,10 @@ img{
     border-radius: 50%;
 }
 
-.side_bar .user .user_name span{
+.side_bar .user .user_name div{
     color: var(--spotify-light);
     font-size: 15px;
+    margin-left: 0.5rem;
 }
 
 /* start album */
@@ -541,4 +550,5 @@ img{
     .side_bar .user img, .side_bar .user span{
         width: 15px;
     }
+
 }
