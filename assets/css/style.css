@@ -100,6 +100,8 @@ img{
 .c_light{
     color: var(--spotify-light);
 }
+
+
 /* debug */
 .debug .side_bar{
     border: 3px solid red;
@@ -140,7 +142,7 @@ img{
 
 /* start side_bar */
 .side_bar{
-    width: 300px;
+    width: 200px;
     height: 100%;
     
     background-color: var(--spotify-dark);
@@ -220,13 +222,13 @@ img{
 /* start album */
 
 .album{
-    width: calc(100% - 300px);
+    width: calc(100% - 200px);
     background-color: var(--spotify-lightdark);
 }
 
 .album .album_head{
     justify-content: end;
-    height: 100px;
+    height: 80px;
     background-color: var(--spotify-dark);
     opacity: 0.7;
     width: 100%;
@@ -237,7 +239,7 @@ img{
     
 
 .album .album_head a{
-    padding: 0.7rem 2rem;
+    padding: 0.5rem 2rem;
     font-size: 15px;
     color: var(--spotify-light);
     border: 1px solid var(--spotify-light);
@@ -247,7 +249,7 @@ img{
 }
 
 .album .album_body{
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     overflow: scroll;
 }
 
@@ -261,6 +263,7 @@ img{
 .album .album_body .navbar li> a{
     text-decoration: none;
     color: var(--spotify-prymary);
+    font-weight: bold;
 }
 
 .album .album_body .navbar li> hr{
@@ -272,7 +275,7 @@ img{
     margin-top: 0.3rem;
 }
 
-.album .album_body .brani, .album .album_body .for_you{
+.album .album_body .brani, .album .album_body .for_you, .album .album_body .popular{
     padding: 1rem;
 }
 .album .album_body .container h2{
@@ -312,6 +315,14 @@ img{
 
 }
 
+.album .album_body .popular p{
+    color: var(--spotify-light);
+    font-size: 10px;
+    padding-left: 1rem;
+
+}
+
+
 
 /* #endregion page_top */
 
@@ -334,3 +345,61 @@ img{
 
 
 /* #endregion page_bottom */
+
+
+
+/* #region media */
+
+@media  screen and (max-width:800px) {
+    
+    /* utilities */
+    .container_md_90{
+        width: 90%;
+        margin: auto;
+    }
+
+    .col_md_3{
+        width: calc(100% / 12 * 3);
+    }
+
+    .col_md_12{
+        width: 100%;
+    }
+
+
+
+
+
+    /* main */
+
+    .album_body .navbar ul{
+        flex-wrap: wrap;
+    }
+
+    .album_body .navbar ul li a{
+        font-size: 15px;
+    }
+
+    .album_body .navbar ul:last-child{
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+
+    
+  
+    .album .album_body .container h2{
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+
+    .album .album_body .container h4{
+        font-size: 10px;
+        margin: 0.5rem 0;
+    }
+
+    .album .album_body .container .col_2{
+        padding: 0.5rem;
+    }
+}
+
