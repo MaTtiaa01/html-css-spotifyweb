@@ -323,6 +323,14 @@ img{
     
 }
 
+.page_bottom .control_left, .page_bottom .control_right{
+    flex-grow: 1;
+    
+}
+
+.page_bottom .control_center{
+    flex-grow: 2;
+}
 
 
 /* #endregion page_bottom */
