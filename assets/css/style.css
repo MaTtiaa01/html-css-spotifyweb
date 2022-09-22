@@ -23,6 +23,10 @@ img{
 }
 
 /* utilities */
+
+.container_page{
+    height: 100vh;
+}
 .container{
     width: 100%;
     
@@ -130,7 +134,7 @@ img{
 /* #region page_top */
 
 .page_top{
-    height: calc(100vh - 100px);
+    height: calc(100% - 100px);
     display: flex;
 }
 
@@ -138,7 +142,7 @@ img{
 .side_bar{
     width: 300px;
     height: 100%;
-    z-index: 999;
+    
     background-color: var(--spotify-dark);
 }
 
@@ -146,6 +150,7 @@ img{
 .side_bar .box{
     justify-content: space-between;
     height: 100%;
+    overflow: scroll;
 }
 
 .side_bar .menu{
@@ -215,21 +220,21 @@ img{
 /* start album */
 
 .album{
-    width: calc(100vw - 300px);
+    width: calc(100% - 300px);
     background-color: var(--spotify-lightdark);
 }
 
 .album .album_head{
     justify-content: end;
     height: 100px;
-    z-index: 900;
-    position: fixed;
     background-color: var(--spotify-dark);
-    opacity: 0.5;
-    width: 80%;
+    opacity: 0.7;
+    width: 100%;
     align-items: center;
 
 }
+    
+    
 
 .album .album_head a{
     padding: 0.7rem 2rem;
@@ -242,11 +247,10 @@ img{
 }
 
 .album .album_body{
+    height: calc(100% - 100px);
     overflow: scroll;
 }
-.album .album_body .navbar{
-    margin-top: 120px;
-}
+
 
 
 .album .album_body .navbar ul{
@@ -316,7 +320,7 @@ img{
 
 .page_bottom{
     height: 100px;
-    z-index: 1000;
+    
 }
 
 
