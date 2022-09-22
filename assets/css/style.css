@@ -376,6 +376,49 @@ img{
     color: var(--spotify-prymary);
 }
 
+/* start control center */
+.page_bottom .control_center .control i{
+    color: var(--spotify-light);
+    margin: 0 0.5rem;
+    font-size: 20px;
+}
+
+.page_bottom .control_center .control{
+    text-align: center;
+    padding: 1rem;
+}
+
+.page_bottom .control_center .song_bar{
+    justify-content: center;
+    align-items: center;
+}
+
+.page_bottom .control_center .song_bar .time_played, .page_bottom .control_center .song_bar .time_left{
+    color: var(--spotify-light);
+    font-size: 8px;
+}
+
+.page_bottom .control_center .song_bar .bar{
+    width: 70%;
+    background-color: var(--spotify-prymary);
+    height: 5px;
+    border-radius: 10px;
+    margin: 0 0.8rem;
+}
+
+.page_bottom .control_center .song_bar .bar .playing_bar{
+    width: 30%;
+    background-color: var(--spotify-light);
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
 /* #endregion page_bottom */
 
 
