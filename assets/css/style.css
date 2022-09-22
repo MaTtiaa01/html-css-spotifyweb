@@ -401,7 +401,7 @@ img{
 .page_bottom .control_center .song_bar .bar{
     width: 70%;
     background-color: var(--spotify-prymary);
-    height: 5px;
+    height: 4px;
     border-radius: 10px;
     margin: 0 0.8rem;
 }
@@ -409,12 +409,37 @@ img{
 .page_bottom .control_center .song_bar .bar .playing_bar{
     width: 30%;
     background-color: var(--spotify-light);
-    height: 5px;
+    height: 4px;
     border-radius: 10px;
 }
 
+/*  start control right */
 
+.page_bottom .control_right {
+    justify-content: flex-end;
+    padding: 0.5rem;
+    align-items: center;
+}
+.page_bottom .control_right i{
+    color: var(--spotify-light);
+    margin: 0 0.5rem;
+    font-size: 10px;
+}
 
+.page_bottom .control_right .volume_bar{
+    width: 50%;
+    background-color: var(--spotify-prymary);
+    height: 4px;
+    border-radius: 10px;
+    margin: 0 0.8rem;
+}
+
+.page_bottom .control_right .volume_bar .volume{
+    width: 20%;
+    background-color: var(--spotify-light);
+    height: 4px;
+    border-radius: 10px;
+}
 
 
 
