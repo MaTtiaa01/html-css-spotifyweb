@@ -148,7 +148,7 @@ img{
     width: 200px;
     height: 100%;
     background-color: var(--spotify-dark);
-    overflow: scroll;
+    
 
 }
 
@@ -156,6 +156,7 @@ img{
 .side_bar .box{
     justify-content: space-between;
     height: 100%;
+    overflow: scroll;
 }
 
 .side_bar .menu{
@@ -432,6 +433,8 @@ img{
     height: 4px;
     border-radius: 10px;
     margin: 0 0.8rem;
+    display: flex;
+    align-items: center;
 }
 
 .page_bottom .control_center .song_bar .bar .playing_bar{
@@ -460,6 +463,8 @@ img{
     height: 4px;
     border-radius: 10px;
     margin: 0 0.8rem;
+    display: flex;
+    align-items: center;
 }
 
 .page_bottom .control_right .volume_bar .volume{
@@ -469,6 +474,13 @@ img{
     border-radius: 10px;
 }
 
+.page_bottom .control_center .bar .point, .page_bottom .control_right .volume_bar .volume_point{
+    width: 10px;
+    height: 10px;
+    background-color: var(--spotify-light);
+    border-radius: 50%;
+    display: none;
+}
 /* start hover */
 
 .page_bottom .control_left .brano_name:hover, .page_bottom .control_left i:hover{
@@ -479,9 +491,24 @@ img{
     font-size: 30px;
 }
 
-.page_bottom .control_center .song_bar .bar:hover + .playing_bar {
+.page_bottom .control_center .song_bar .bar:hover > .playing_bar {
+    background-color: var(--spotify-open);
+    
+}
+
+.page_bottom .control_center .bar:hover > .point, .page_bottom .control_right .volume_bar:hover > .volume_point{
+    display: block;
+}
+
+.page_bottom .control_right .volume_bar:hover > .volume{
     background-color: var(--spotify-open);
 }
+
+
+
+
+
+
 
 
 
