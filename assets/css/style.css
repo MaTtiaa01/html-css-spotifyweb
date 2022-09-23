@@ -385,7 +385,7 @@ img{
 
 .page_bottom .control_left .song{
     padding: 0.5rem;
-    margin-right: 1rem;
+    
 }
 
 .page_bottom .control_left .song .song_name{
@@ -403,6 +403,10 @@ img{
 .page_bottom .control_left i{
     margin: 0 0.5rem;
     color: var(--spotify-prymary);
+}
+
+.page_bottom .control_left .left_icons{
+    align-items: center;
 }
 
 /* start control center */
@@ -611,6 +615,10 @@ img{
     }
     .side_bar .menu .new_playlist_title{
         font-size: 15px;
+    }
+
+    .page_bottom .control_left .left_icons{
+        flex-direction: column;
     }
 }
 
