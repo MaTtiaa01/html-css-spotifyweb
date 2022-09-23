@@ -156,7 +156,7 @@ img{
 .side_bar .box{
     justify-content: space-between;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .side_bar .menu{
@@ -273,7 +273,7 @@ img{
 
 .album .album_body{
     height: calc(100% - 80px);
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 
@@ -354,6 +354,46 @@ img{
 .side_bar a:hover, .album_body .navbar ul a:hover{
     color: var(--spotify-light);
 }
+.album .album_body .brani .card .img_box,
+.album .album_body .for_you .img_box,
+.album .album_body .popular .img_box{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgb(86, 85, 85);
+}
+
+.album .album_body .brani .img_box .icon, .album .album_body .for_you .img_box .icon,.album .album_body .popular .img_box .icon{
+    display: none;
+    font-size: 60px;
+    color: var(--spotify-light);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album .album_body .brani .card:hover > .img_box .overlay,
+.album .album_body .for_you .card:hover > .img_box .overlay,
+.album .album_body .popular .card:hover > .img_box .overlay{
+    opacity: 0.6;
+}
+
+.album .album_body .brani .card:hover > .img_box .icon,
+.album .album_body .for_you .card:hover > .img_box .icon,
+.album .album_body .popular .card:hover > .img_box .icon{
+    display:block;
+    
+}
+
 
 
 /* #endregion page_top */
@@ -507,6 +547,9 @@ img{
 .page_bottom .control_right .volume_bar:hover > .volume{
     background-color: var(--spotify-open);
 }
+
+
+
 
 
 
@@ -672,5 +715,13 @@ img{
 
 
 
+}
+
+/* bonus */
+
+@media screen and (max-height:700) {
+    .page_top .side_bar .user{
+        display:none;
+    }
 }
 
