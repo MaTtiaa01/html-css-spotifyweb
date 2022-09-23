@@ -147,15 +147,15 @@ img{
 .side_bar{
     width: 200px;
     height: 100%;
-    
     background-color: var(--spotify-dark);
+    overflow: scroll;
+
 }
 
 
 .side_bar .box{
     justify-content: space-between;
     height: 100%;
-    overflow: scroll;
 }
 
 .side_bar .menu{
@@ -630,7 +630,9 @@ img{
         color: var(--spotify-prymary);
     }
 
-
+    #logo{
+        fill: var(--spotify-light);
+    }
 
 
 
