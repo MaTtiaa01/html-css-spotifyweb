@@ -104,6 +104,9 @@ img{
     color: var(--spotify-light);
 }
 
+.overflow_y{
+    overflow-y: scroll;
+}
 
 /* debug */
 .debug .side_bar{
@@ -289,14 +292,14 @@ img{
     font-weight: bold;
 }
 
-.album .album_body .navbar li> hr{
+/* .album .album_body .navbar li> hr{
     width: 40%;
     color: #ADFF2F;
     font-size: 3px;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 0.3rem;
-}
+} */
 
 .album .album_body .brani, .album .album_body .for_you, .album .album_body .popular{
     padding: 1rem;
@@ -343,6 +346,12 @@ img{
     font-size: 10px;
     padding-left: 1rem;
 
+}
+
+#underline{
+    text-decoration:underline var(--spotify-open) ;
+    text-decoration-thickness: 3px;
+    
 }
 
 /* start hover */
@@ -717,11 +726,4 @@ img{
 
 }
 
-/* bonus */
-
-@media screen and (max-height:700) {
-    .page_top .side_bar .user{
-        display:none;
-    }
-}
 
